@@ -1,4 +1,4 @@
-@'
+
 # Phishing Email Analyzer (SOC Triage Tool)
 
 Outil Python d'analyse automatisée d'e-mails suspects (`.eml`) permettant de détecter les tentatives de phishing, vérifier l'authenticité de l'expéditeur (`SPF`, `DKIM`, `DMARC`), extraire les indicateurs de compromission (IOCs : URLs, hash `SHA-256` des pièces jointes) et vérifier la réputation via l'API **VirusTotal**.
