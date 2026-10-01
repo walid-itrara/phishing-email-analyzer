@@ -1,0 +1,25 @@
+====================================================
+           PHISHING EMAIL ANALYSIS REPORT           
+====================================================
+Analyzed File     : sample.eml
+Subject           : URGENT: Your Account Has Been Suspended!
+Date              : Thu, 01 Oct 2026 14:22:05 +0000
+----------------------------------------------------
+$ python email_analyzer.py sample.eml
+Sender            : noreply@paypal-security.com [Suspicious]
+Return-Path       : bounce@shady-mailer-host.ru
+SPF               : Fail
+DKIM              : Fail
+DMARC             : Fail
+Links             : 2 (1 malicious)
+Attachment        : invoice_update.pdf (SHA-256: 623539f106...)
+Domain Reputation : Malicious (Heuristic / Threat Intel Simulation)
+----------------------------------------------------
+EXTRACTED IOCs - URLs (Defanged):
+  - [MALICIOUS] hxxp://login-update-paypal-security[.]com/verify
+  - [CLEAN]     hxxps://www[.]paypal[.]com/us/webapps/mpp/ua/privacy-full
+
+EXTRACTED IOCs - Attachments:
+  - File : invoice_update.pdf (111 bytes)
+    Hash : 623539f106ed82f6507e3a4199c558fd6291930c6cdb90fce039e7b6162f5d50
+====================================================

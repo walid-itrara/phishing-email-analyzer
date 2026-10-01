@@ -1,0 +1,34 @@
+Return-Path: <bounce@shady-mailer-host.ru>
+Received: from mail.shady-mailer-host.ru (mail.shady-mailer-host.ru [185.220.101.45])
+        by mx.google.com with ESMTP id a12si987654qka.12
+        for <victim@university.edu>; Thu, 01 Oct 2026 14:22:10 +0000
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of noreply@paypal-security.com does not designate 185.220.101.45 as permitted sender) smtp.mailfrom=noreply@paypal-security.com;
+       dkim=fail header.i=@paypal-security.com;
+       dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=paypal-security.com
+From: "PayPal Security" <noreply@paypal-security.com>
+To: victim@university.edu
+Subject: URGENT: Your Account Has Been Suspended!
+Date: Thu, 01 Oct 2026 14:22:05 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============boundary123=="
+
+--===============boundary123==
+Content-Type: text/html; charset="utf-8"
+
+<html>
+  <body>
+    <p>Dear Customer, we detected unauthorized login attempts.</p>
+    <p>Please <a href="http://login-update-paypal-security.com/verify">click here to verify your identity</a> immediately.</p>
+    <p>Or view our <a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full">Privacy Policy</a>.</p>
+  </body>
+</html>
+
+--===============boundary123==
+Content-Type: application/pdf; name="invoice_update.pdf"
+Content-Disposition: attachment; filename="invoice_update.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKJcOkw7zDtsOfCjIgMCBvYmoKPDwvTGVuZ3RoIDMgMCBSL0ZpbHRlci9GbGF0ZURl
+Y29kZT4+CnN0cmVhbQp4nDPQM1Qo5ypUMFAwAEIImZyjp5+fX6Kgr5BflJ+XqlCSmZ9XopCe
+--===============boundary123==--
